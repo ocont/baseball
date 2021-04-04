@@ -21,9 +21,6 @@ Zee=["Anthony Rendon","Nelson Cruz","Josh Bell","Franmil Reyes"]
 Arnie=["Juan Soto","CoreySeager","Eddie Rosario","Eric Hosmer"]
 Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
 
-email_addresses=["kjking10@gmail.com","howie.silverman923@gmail.com","kingr10178@gmail.com","eriver74@gmail.com","arnump50@gmail.com","neuby73@gmail.com","rayzerrenner@gmail.com","angelobartolotta67@gmail.com","mrozrandy@icloud.com","toconnelll@gmail.com","bretttheodore@gmail.com","gregg.wasserman@icloud.com"]
-
-
 #
 ## FUNCTIONS
 #
@@ -74,6 +71,6 @@ create_output("Zee",Zee)
 create_output("Arnie",Arnie)
 create_output("Efran",Efran)
 
-#print ("\n")
-#for address in email_addresses:
-#    print (address)
+#
+## END
+#
