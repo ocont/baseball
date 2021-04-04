@@ -76,6 +76,6 @@ create_output("Zee",Zee)
 create_output("Arnie",Arnie)
 create_output("Efran",Efran)
 
-print ("\n")
-for address in email_addresses:
-    print (address)
+#print ("\n")
+#for address in email_addresses:
+#    print (address)
