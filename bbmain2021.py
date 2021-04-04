@@ -14,14 +14,15 @@ Wee=["Freddie Freeman","Christian Yelich","Alex Bregman","Kyle Tucker"]
 Randy=["Cody Bellinger","Joey Gallo","Xander Bogaerts","Carlos Correa"]
 Dave=["Manny Machado","Nolan Arenado","Yordan Álvarez","Paul Goldschmidt"]
 Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
-Rob=["Bryce Harper","Rafael Devers","Michael Conforto","Michael Conforto"]
+Rob=["Bryce Harper","Rafael Devers","Michael Conforto","Giancarlo Stanton"]
 Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
 Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
 Zee=["Anthony Rendon","Nelson Cruz","Josh Bell","Franmil Reyes"]
 Arnie=["Juan Soto","CoreySeager","Eddie Rosario","Eric Hosmer"]
 Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
 
-email_addresses=["kjking10@gmail.com","howie.silverman923@gmail.com","kingr10178@gmail.com","eriver74@gmail.com","arnump50@gmail.com","neuby73@gmail.com","rayzerrenner@gmail.com","angelobartolotta67@gmail.com","mrozrandy@icloud.com","toconnelll@gmail.com","bretttheorde@gmail.com","gregg.wasserman@icloud.com"]
+email_addresses=["kjking10@gmail.com","howie.silverman923@gmail.com","kingr10178@gmail.com","eriver74@gmail.com","arnump50@gmail.com","neuby73@gmail.com","rayzerrenner@gmail.com","angelobartolotta67@gmail.com","mrozrandy@icloud.com","toconnelll@gmail.com","bretttheodore@gmail.com","gregg.wasserman@icloud.com"]
+
 
 #
 ## FUNCTIONS
