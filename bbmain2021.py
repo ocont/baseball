@@ -10,7 +10,7 @@ data = batting_stats_bref(2021)
 
 Brett=["José Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
 Gregg=["Mike Trout","Mookie Betts","Rhys Hoskins","Matt Chapman"]
-Wee=["Freddie Freeman","Christian Yelich","Alex Bregman","Kyle Tucker"]
+Wie=["Freddie Freeman","Christian Yelich","Alex Bregman","Kyle Tucker"]
 Randy=["Cody Bellinger","Joey Gallo","Xander Bogaerts","Carlos Correa"]
 Dave=["Manny Machado","Nolan Arenado","Yordan Álvarez","Paul Goldschmidt"]
 Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
@@ -63,7 +63,7 @@ def create_output(NAME,LIST):
 print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
 create_output("Brett",Brett)
 create_output("Gregg",Gregg)
-create_output("Wee",Wee)
+create_output("Wie",Wie)
 create_output("Randy",Randy)
 create_output("Dave",Dave)
 create_output("Tom",Tom)
