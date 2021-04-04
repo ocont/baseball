@@ -60,8 +60,7 @@ def create_output(NAME,LIST):
 ## MAIN
 #
 
-#print("Name;P1 Name;P1 RBI;P2 Name;P2 RBI;P3 Name;P3 RBI;Total;P4 Name;P4 RBI")
-#print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
+print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
 create_output("Brett",Brett)
 create_output("Gregg",Gregg)
 create_output("Wee",Wee)
