@@ -52,7 +52,6 @@ def create_output(NAME,LIST):
 
         playerrbitotal=playerdict[1][2] + playerdict[2][2] + playerdict[3][2]
 
-        #print (NAME + ";" + str(playerdict[1][0]) + "(" + str(playerdict[1][1]) + ")" + ";" + str(playerdict[1][2]) + ";" + playerdict[2][0] + "(" + str(playerdict[2][1]) + ")" + ";" + str(playerdict[2][2]) + ";" + playerdict[3][0] + "(" + str(playerdict[3][1]) + ")" + ";" + str(playerdict[3][2]) + ";" + str(playerrbitotal) + ";" + playerdict[4][0] + "(" + str(playerdict[4][1]) + ")" + ";" + str(playerdict[4][2]))
         print (NAME + "," + str(playerdict[1][0]) + "(" + str(playerdict[1][1]) + ")" + "," + str(playerdict[1][2]) + "," + playerdict[2][0] + "(" + str(playerdict[2][1]) + ")" + "," + str(playerdict[2][2]) + "," + playerdict[3][0] + "(" + str(playerdict[3][1]) + ")" + "," + str(playerdict[3][2]) + "," + str(playerrbitotal) + "," + playerdict[4][0] + "(" + str(playerdict[4][1]) + ")" + "," + str(playerdict[4][2]))
     except Exception as err:
         print (err)
@@ -62,7 +61,7 @@ def create_output(NAME,LIST):
 #
 
 #print("Name;P1 Name;P1 RBI;P2 Name;P2 RBI;P3 Name;P3 RBI;Total;P4 Name;P4 RBI")
-print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
+#print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
 create_output("Brett",Brett)
 create_output("Gregg",Gregg)
 create_output("Wee",Wee)
