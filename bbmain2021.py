@@ -18,7 +18,7 @@ Rob=["Bryce Harper","Rafael Devers","Michael Conforto","Giancarlo Stanton"]
 Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
 Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
 Zee=["Anthony Rendon","Nelson Cruz","Josh Bell","Franmil Reyes"]
-Arnie=["Juan Soto","CoreySeager","Eddie Rosario","Eric Hosmer"]
+Arnie=["Juan Soto","Corey Seager","Eddie Rosario","Eric Hosmer"]
 Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
 
 #
