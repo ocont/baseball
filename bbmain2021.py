@@ -34,7 +34,8 @@ def create_output(NAME,LIST):
             playerstats = data[data.Name == player ].head(2000)
             if playerstats.size != 0:
                 playername=playerstats['Name'].values[0]
-                playerteam=playerstats['Tm'].values[0]
+                #playerteam=playerstats['Tm'].values[0]
+                playerteam=playerstats['Tm'].values[0].split(',')[0]
                 playerrbi=playerstats['RBI'].values[0]
                 playerdict[playercount]=[playername,playerteam,playerrbi]
                 playerrbitotal=playerrbitotal+playerrbi
