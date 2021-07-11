@@ -1,13 +1,13 @@
 Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI
-Brett,Jose Abreu(CWS),66,Matt Olson(OAK),57,J.D. Martinez(BOS),62,185,Michael A. Taylor(KC),32
-Dave,Manny Machado(SD),60,Nolan Arenado(STL),56,Yordan Alvarez(HOU),56,172,Paul Goldschmidt(STL),49
-Kevin,Pete Alonso(NYM),49,Fernando Tatis Jr.(SD),60,Ronald Acuna Jr.(ATL),52,161,Mike Moustakas(CIN),13
-Angelo,Vladimir Guerrero Jr.(TOR),73,Francisco Lindor(NYM),34,Aaron Judge(NYY),47,154,George Springer(TOR),11
-Efran,Gleyber Torres(NYY),28,Javier Baez(CHC),56,Jose Ramirez(CLE),52,136,Trea Turner(WSH),42
-Rob,Bryce Harper(PHI),34,Rafael Devers(BOS),72,Michael Conforto(NYM),16,122,Giancarlo Stanton(NYY),42
-Zee,Anthony Rendon(LAA),34,Nelson Cruz(MIN),46,Josh Bell(WSH),42,122,Franmil Reyes(CLE),38
-Randy,Cody Bellinger(LAD),17,Joey Gallo(TEX),52,Xander Bogaerts(BOS),50,119,Carlos Correa(HOU),52
-Tom,Marcell Ozuna(ATL),26,Eugenio Suarez(CIN),50,Charlie Blackmon(COL),41,117,Jorge Soler(KC),30
-Gregg,Mike Trout(LAA),18,Mookie Betts(LAD),37,Rhys Hoskins(PHI),55,110,Matt Chapman(OAK),42
-Arnie,Juan Soto(WSH),42,Corey Seager(LAD),22,Eddie Rosario(CLE),46,110,Eric Hosmer(SD),41
-Wie,Freddie Freeman(ATL),50,Christian Yelich(MIL),24,Alex Bregman(HOU),34,108,Kyle Tucker(HOU),48
+Brett,Jose Abreu(CWS),66.0,Matt Olson(OAK),57.0,J.D. Martinez(BOS),62.0,185.0,Michael A. Taylor(KC),32.0
+Dave,Manny Machado(SD),60.0,Nolan Arenado(STL),56.0,Yordan Alvarez(HOU),56.0,172.0,Paul Goldschmidt(STL),49.0
+Kevin,Pete Alonso(NYM),49.0,Fernando Tatis Jr.(SD),60.0,Ronald Acuna Jr.(ATL),52.0,161.0,Mike Moustakas(CIN),13.0
+Randy,Carlos Correa(HOU),52.0,Joey Gallo(TEX),52.0,Xander Bogaerts(BOS),50.0,154.0,Cody Bellinger(LAD),17.0
+Angelo,Vladimir Guerrero Jr.(TOR),73.0,Francisco Lindor(NYM),34.0,Aaron Judge(NYY),47.0,154.0,George Springer(TOR),11.0
+Efran,Gleyber Torres(NYY),28.0,Javier Baez(CHC),56.0,Jose Ramirez(CLE),52.0,136.0,Trea Turner(WSH),42.0
+Rob,Bryce Harper(PHI),34.0,Rafael Devers(BOS),72.0,Michael Conforto(NYM),16.0,122.0,Giancarlo Stanton(NYY),42.0
+Zee,Anthony Rendon(LAA),34.0,Nelson Cruz(MIN),46.0,Josh Bell(WSH),42.0,122.0,Franmil Reyes(CLE),38.0
+Tom,Marcell Ozuna(ATL),26.0,Eugenio Suarez(CIN),50.0,Charlie Blackmon(COL),41.0,117.0,Jorge Soler(KC),30.0
+Arnie,Juan Soto(WSH),42.0,Corey Seager(LAD),22.0,Eddie Rosario(CLE),46.0,110.0,Eric Hosmer(SD),41.0
+Wie,Freddie Freeman(ATL),50.0,Christian Yelich(MIL),24.0,Alex Bregman(HOU),34.0,108.0,Kyle Tucker(HOU),48.0
+4,,,,,,,,,

@@ -6,9 +6,9 @@ import pprint
 import argparse
 
 Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
-Gregg=["Mike Trout","Mookie Betts","Rhys Hoskins","Matt Chapman"]
+Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Bett"]
 Wie=["Freddie Freeman","Christian Yelich","Alex Bregman","Kyle Tucker"]
-Randy=["Cody Bellinger","Joey Gallo","Xander Bogaerts","Carlos Correa"]
+Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
 Dave=["Manny Machado","Nolan Arenado","Yordan Alvarez","Paul Goldschmidt"]
 Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
 Rob=["Bryce Harper","Rafael Devers","Michael Conforto","Giancarlo Stanton"]
