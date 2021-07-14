@@ -87,7 +87,7 @@ def create_output(NAME,LIST):
 print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
 create_output("Brett",Brett)
 create_output("Gregg",Gregg)
-create_output("Wie",Wie)
+#create_output("Wie",Wie)
 create_output("Randy",Randy)
 create_output("Dave",Dave)
 reate_output("Tom",Tom)
