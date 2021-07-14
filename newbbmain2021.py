@@ -18,13 +18,6 @@ Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
 Arnie=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
 Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
 
-### Randy Cody Bellinger, Carlos Correa
-### Gregg Mookie Bett, Matt Chapman
-### Rob Michael Conforto, Giancarlo Stanton
-### Zee Anthony Rendon, Franmil Reyes
-### Arnie Corey Seager, Eric Hosmer
-### Wie Alex Bregman, Kyle Tucker
-
 def create_output(NAME,LIST):
     try:
         player_data = {}
@@ -104,3 +97,10 @@ create_output("Angelo",Angelo)
 create_output("Zee",Zee)
 create_output("Arnie",Arnie)
 create_output("Efran",Efran)
+
+## Randy Cody Bellinger, Carlos Correa
+### Gregg Mookie Bett, Matt Chapman
+### Rob Michael Conforto, Giancarlo Stanton
+### Zee Anthony Rendon, Franmil Reyes
+### Arnie Corey Seager, Eric Hosmer
+### Wie Alex Bregman, Kyle Tucker
