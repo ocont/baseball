@@ -95,7 +95,7 @@ print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
 #create_output("Kevin",Kevin)
 #create_output("Angelo",Angelo)
 #create_output("Zee",Zee)
-#create_output("Arnie",Arnie)
+create_output("Arnie",Arnie)
 create_output("Efran",Efran)
 
 ## Randy Cody Bellinger, Carlos Correa
