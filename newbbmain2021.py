@@ -5,17 +5,17 @@ import requests
 import pprint
 import argparse
 
-Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
-Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Bett"]
-Wie=["Freddie Freeman","Christian Yelich","Kyle Tucker", "Alex Bregman"]
-Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
-Dave=["Manny Machado","Nolan Arenado","Yordan Alvarez","Paul Goldschmidt"]
-Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
-Rob=["Bryce Harper","Rafael Devers","Giancarlo Stanton", "Michael Conforto"]
-Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
-Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
-Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
-Arnie=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
+#Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
+#Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Bett"]
+#Wie=["Freddie Freeman","Christian Yelich","Kyle Tucker", "Alex Bregman"]
+#Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
+#Dave=["Manny Machado","Nolan Arenado","Yordan Alvarez","Paul Goldschmidt"]
+#Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
+#Rob=["Bryce Harper","Rafael Devers","Giancarlo Stanton", "Michael Conforto"]
+#Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
+#Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
+#Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
+#Arnie=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
 Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
 
 def create_output(NAME,LIST):
