@@ -5,17 +5,17 @@ import requests
 import pprint
 import argparse
 
-#Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
-#Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Bett"]
-#Wie=["Freddie Freeman","Christian Yelich","Kyle Tucker", "Alex Bregman"]
-#Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
-#Dave=["Manny Machado","Nolan Arenado","Yordan Alvarez","Paul Goldschmidt"]
-#Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
-#Rob=["Bryce Harper","Rafael Devers","Giancarlo Stanton", "Michael Conforto"]
-#Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
-#Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
-#Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
-#Arnie=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
+Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
+Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Bett"]
+Wie=["Freddie Freeman","Christian Yelich","Kyle Tucker", "Alex Bregman"]
+Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
+Dave=["Manny Machado","Nolan Arenado","Yordan Alvarez","Paul Goldschmidt"]
+Tom=["Marcell Ozuna","Eugenio Suarez","Charlie Blackmon","Jorge Soler"]
+Rob=["Bryce Harper","Rafael Devers","Giancarlo Stanton", "Michael Conforto"]
+Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
+Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
+Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
+Arnie=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
 Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
 
 def create_output(NAME,LIST):
@@ -85,17 +85,17 @@ def create_output(NAME,LIST):
         print(err)
 
 print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
-create_output("Brett",Brett)
-create_output("Gregg",Gregg)
-create_output("Wie",Wie)
-create_output("Randy",Randy)
-create_output("Dave",Dave)
-create_output("Tom",Tom)
-create_output("Rob",Rob)
-create_output("Kevin",Kevin)
-create_output("Angelo",Angelo)
-create_output("Zee",Zee)
-create_output("Arnie",Arnie)
+#create_output("Brett",Brett)
+#create_output("Gregg",Gregg)
+#create_output("Wie",Wie)
+#create_output("Randy",Randy)
+#create_output("Dave",Dave)
+#create_output("Tom",Tom)
+#create_output("Rob",Rob)
+#create_output("Kevin",Kevin)
+#create_output("Angelo",Angelo)
+#create_output("Zee",Zee)
+#create_output("Arnie",Arnie)
 create_output("Efran",Efran)
 
 ## Randy Cody Bellinger, Carlos Correa
