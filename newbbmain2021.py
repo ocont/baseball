@@ -16,7 +16,7 @@ Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
 Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
 Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
 Arnie=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
-Efran=["Gleyber Torres","Javier Baez","Jose Ramirez","Trea Turner"]
+Efran=["Trea Turner","Javier Baez","Jose Ramirez","Gleyber Torres"]
 
 def create_output(NAME,LIST):
     try:
