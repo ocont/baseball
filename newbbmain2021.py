@@ -6,7 +6,7 @@ import pprint
 import argparse
 
 Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
-Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Bett"]
+Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Betts"]
 Wie=["Freddie Freeman","Christian Yelich","Kyle Tucker", "Alex Bregman"]
 Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
 Dave=["Manny Machado","Nolan Arenado","Yordan Alvarez","Paul Goldschmidt"]
@@ -87,10 +87,10 @@ def create_output(NAME,LIST):
 print("Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI")
 create_output("Brett",Brett)
 create_output("Gregg",Gregg)
-#create_output("Wie",Wie)
+create_output("Wie",Wie)
 create_output("Randy",Randy)
 create_output("Dave",Dave)
-reate_output("Tom",Tom)
+create_output("Tom",Tom)
 create_output("Rob",Rob)
 create_output("Kevin",Kevin)
 create_output("Angelo",Angelo)
@@ -98,9 +98,11 @@ create_output("Zee",Zee)
 create_output("Arnie",Arnie)
 create_output("Efran",Efran)
 
-## Randy Cody Bellinger, Carlos Correa
-### Gregg Mookie Bett, Matt Chapman
-### Rob Michael Conforto, Giancarlo Stanton
-### Zee Anthony Rendon, Franmil Reyes
-### Arnie Corey Seager, Eric Hosmer
-### Wie Alex Bregman, Kyle Tucker
+print("\n")
+print("Substitution:")
+print("Randy moved Cody Bellinger for Carlos Correa")
+print("Gregg moved Mookie Betts for Matt Chapman")
+print("Rob moved Michael Conforto for Giancarlo Stanton")
+print("Zee moved Anthony Rendon for Franmil Reyes")
+print("Arnie moved Corey Seager for Eric Hosmer")
+print("Wie moved Alex Bregman for Kyle Tucker")
