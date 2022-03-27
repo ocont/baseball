@@ -1,13 +1,4 @@
-Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI
-Brett,Jose Abreu(CWS),117,Matt Olson(OAK),111,J.D. Martinez(BOS),99,327,Michael A. Taylor(KC),54
-Gregg,Mike Trout(LAA),18,Matt Chapman(OAK),72,Rhys Hoskins(PHI),71,161,Mookie Betts(LAD),58
-Wie,Freddie Freeman(ATL),83,Christian Yelich(MIL),51,Kyle Tucker(HOU),92,226,Alex Bregman(HOU),55
-Randy,Carlos Correa(HOU),92,Joey Gallo(NYY),77,Xander Bogaerts(BOS),79,248,Cody Bellinger(LAD),36
-Dave,Manny Machado(SD),106,Nolan Arenado(STL),105,Yordan Alvarez(HOU),104,315,Paul Goldschmidt(STL),99
-Tom,Marcell Ozuna(ATL),26,Eugenio Suarez(CIN),79,Charlie Blackmon(COL),78,183,Jorge Soler(ATL),70
-Rob,Bryce Harper(PHI),84,Rafael Devers(BOS),113,Giancarlo Stanton(NYY),97,294,Michael Conforto(NYM),55
-Kevin,Pete Alonso(NYM),94,Fernando Tatis Jr.(SD),97,Ronald Acuna Jr.(ATL),52,243,Mike Moustakas(CIN),22
-Angelo,Vladimir Guerrero Jr.(TOR),111,Francisco Lindor(NYM),63,Aaron Judge(NYY),98,272,George Springer(TOR),50
-Zee,Franmil Reyes(CLE),85,Nelson Cruz(TB),86,Josh Bell(WSH),88,259,Anthony Rendon(LAA),34
-Arnie,Juan Soto(WSH),95,Eric Hosmer(SD),65,Eddie Rosario(ATL),62,222,Corey Seager(LAD),57
-Efran,Trea Turner(LAD),77,Javier Baez(NYM),87,Jose Ramirez(CLE),103,267,Gleyber Torres(NYY),51
+Name,P1 Name,P1 RBI,P2 Name,P2 RBI,P3 Name,P3 RBI,Total,P4 Name,P4 RBI,P5 Name,P5 RBI
+Gregg,Mike Trout,LAA,18,Matt Chapman,OAK,72,Rhys Hoskins,PHI,71,161,Nelson Cruz,TB,86,Juan Soto,WSH,95
+Randy,Carlos Correa,HOU,92,Joey Gallo,NYY,77,Xander Bogaerts,BOS,79,248,Cody Bellinger,LAD,36,Aaron Judge,NYY,98
+Tom,Jorge Soler,ATL,70,Eugenio Suarez,CIN,79,Charlie Blackmon,COL,78,227,Marcell Ozuna,ATL,26,Mookie Betts,LAD,58
