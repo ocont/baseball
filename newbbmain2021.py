@@ -84,10 +84,12 @@ def sort_report():
     try:
         infile="reports/output.csv"
         outfile="reports/"+str(today)+".csv"
+        latestfile="reports/latestcsv"
 
         df = pd.read_csv(infile)
         sorted_df = df.sort_values(by=["Total"], ascending=False)
         sorted_df.to_csv(outfile, index=False)
+        sorted_df.to_csv(latestfile, index=False)
 
     except Exception as err:
         print(err)
@@ -98,7 +100,6 @@ if __name__ == '__main__':
 
     try:
         file = open("reports/output.csv", "w")
-        #out = csv.writer(file, delimiter=";")
         out = csv.writer(file)
         out.writerow( ['Name', 'P1 Name', 'P1 RBI', 'P2 Name', 'P2 RBI', 'P3 Name' , 'P3 RBI', 'Total', 'P4 Name', 'P4 RBI', 'P5 Name', 'P5 RBI'])
 
