@@ -14,38 +14,64 @@ import sys
 date1 = 2021
 date2 = 2020
 
-url1 = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=3000&game_type='R'&season='" + str(date1) + "'&sort_column='rbi'"
+url_current = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=3000&game_type='R'&season='" + str(date1) + "'&sort_column='rbi'"
 
-url2 = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=3000&game_type='R'&season='" + str(date2) + "'&sort_column='rbi'"
+r_current = requests.get(url_current, headers={"Content-Type": "application/json"})
+data_current = eval(r_current.text)
+players_current=data_current["leader_hitting_repeater"]["leader_hitting_mux"]["queryResults"]["row"]
 
-r_1 = requests.get(url1, headers={"Content-Type": "application/json"})
-data_1 = eval(r_1.text)
-players_1=data_1["leader_hitting_repeater"]["leader_hitting_mux"]["queryResults"]["row"]
+print("Name;Age;Position;2021 Team;2021 AB;2021 RBI;2020 Team;2020 AB;2020 RBI;AVG")
+for player_current in players_current:
+    avg = 0
+    player_id = player_current["player_id"]
+    name_display_roster = player_current["name_display_roster"]
+    team_abbrev_current = player_current["team_abbrev"]
+    ab_current = player_current["ab"]
+    rbi_current = player_current["rbi"]
 
-
-r_2 = requests.get(url2, headers={"Content-Type": "application/json"})
-data_2 = eval(r_2.text)
-players_2=data_2["leader_hitting_repeater"]["leader_hitting_mux"]["queryResults"]["row"]
-
-
-for player_1 in players_1:
-    ## GET PLAYERS AGE AND POSITION
-
-    url_info = "http://lookup-service-prod.mlb.com/json/named.player_info.bam?sport_code='mlb'&player_id=" + str(player_1["player_id"])
+    url_info = "http://lookup-service-prod.mlb.com/json/named.player_info.bam?sport_code='mlb'&player_id=" + str(player_current["player_id"])
     r_info = requests.get(url_info, headers={"Content-Type": "application/json"})
     data_info = eval(r_info.text)
     age = data_info["player_info"]["queryResults"]["row"]["age"]
     position = data_info["player_info"]["queryResults"]["row"]["primary_position_txt"]
+
     if position == "C" or position == "P":
         pass
-    print(str(player_1["name_display_roster"]) +
-          ";" +
-          str(age) +
-          ";" +
-          str(position) +
-          ";" +
-          str(player_1["team_name"]) +
-          ";" +
-          str(player_1["ab"]) +
-          ";" +
-          str(player_1["rbi"]))
+    else:
+
+        url_previous = "http://lookup-service-prod.mlb.com/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='" + str(date2) + "'&player_id='" + str(player_current["player_id"]) + "'"
+
+        r_previous = requests.get(url_previous, headers={"Content-Type": "application/json"})
+#        print(url_previous)
+        try:
+            data_previous = eval(r_previous.text)
+            ab_previous=str(data_previous["sport_hitting_tm"]["queryResults"]["row"]["ab"])
+            rbi_previous=str(data_previous["sport_hitting_tm"]["queryResults"]["row"]["rbi"])
+            team_abbrev_previous=data_previous["sport_hitting_tm"]["queryResults"]["row"]["team_abbrev"]
+        except KeyError as err:
+            ab_previous = "NA"
+            rbi_previous = "NA"
+            team_abbrev_previous = "NA"
+        except TypeError as err:
+            ab_previous = "TYPE"
+            rbi_previous = "TYPE"
+            team_abbrev_previous = "TYPE"
+
+
+        print(str(name_display_roster) +
+            ";" +
+            str(age) +
+            ";" +
+            str(position) +
+            ";" +
+            str(team_abbrev_current) +
+            ";" +
+            str(ab_current) +
+            ";" +
+            str(rbi_current) +
+            ";" +
+            str(team_abbrev_previous) +
+            ";" +
+            str(ab_previous) +
+            ";" +
+            str(rbi_previous))
