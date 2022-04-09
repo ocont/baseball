@@ -1,9 +1,6 @@
-timestamp=`date +"%Y-%m-%d"`
+#!/bin/bash
 
-#./bbmain2021.py > reports/output.csv
-./newbbmain2021.py > reports/output.csv
-./sort.py
-cp -rf reports/${timestamp}.csv reports/latest.csv
+./newbbmain2021.py
 git add reports/*
 git commit -am "adding modules"
 git push origin
