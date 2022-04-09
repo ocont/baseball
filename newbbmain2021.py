@@ -10,6 +10,8 @@ import datetime
 import sys
 
 today = datetime.date.today()
+bb_year=2022
+url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=1000000&game_type='R'&season='" + str(bb_year) + "'&sort_column='rbi'"
 
 Gregg=["Manny Machado", "Nolan Arenado", "Giancarlo Stanton", "Bo Bichette", "Josh Bell"]
 Tom=["Vladimir Guerrero Jr.", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyler O'Neill"]
@@ -28,8 +30,6 @@ def create_output(NAME,LIST):
         player_data = {}
         player_count = 1
         rbi_total = 0
-
-        url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=100000&game_type='R'&season='2022'&sort_column='rbi'"
 
         r = requests.get(url, headers={"Content-Type": "application/json"})
         data = eval(r.text)
