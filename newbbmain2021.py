@@ -91,7 +91,7 @@ def sort_report():
     try:
         infile="reports/output.csv"
         outfile="reports/"+str(today)+".csv"
-        latestfile="reports/latestcsv"
+        latestfile="reports/latest.csv"
 
         df = pd.read_csv(infile)
         sorted_df = df.sort_values(by=["Total"], ascending=False)
