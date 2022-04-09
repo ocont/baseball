@@ -9,42 +9,37 @@ import pandas as pd
 import datetime
 import sys
 
-#Brett=["Jose Abreu","Matt Olson","J.D. Martinez","Michael A. Taylor"]
-#Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Mookie Betts"]
-#Wie=["Freddie Freeman","Christian Yelich","Kyle Tucker", "Alex Bregman"]
-#Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger"]
-#Tom=["Jorge Soler","Eugenio Suarez","Charlie Blackmon","Marcell Ozuna"]
-#Rob=["Bryce Harper","Rafael Devers","Giancarlo Stanton", "Michael Conforto"]
-#Kevin=["Pete Alonso","Fernando Tatis Jr.","Ronald Acuna Jr.","Mike Moustakas"]
-Angelo=["Vladimir Guerrero Jr.","Francisco Lindor","Aaron Judge","George Springer"]
-#Zee=["Franmil Reyes","Nelson Cruz","Josh Bell","Anthony Rendon"]
-#Melissa=["Juan Soto","Eric Hosmer","Eddie Rosario","Corey Seager"]
-#Efran=["Trea Turner","Javier Baez","Jose Ramirez","Gleyber Torres"]
-
 today = datetime.date.today()
 
-Tom=["Jorge Soler","Eugenio Suarez","Charlie Blackmon","Marcell Ozuna", "Mookie Betts"]
-Gregg=["Mike Trout","Matt Chapman","Rhys Hoskins","Nelson Cruz", "Juan Soto"]
-Randy=["Carlos Correa","Joey Gallo","Xander Bogaerts","Cody Bellinger", "Aaron Judge"]
+Gregg=["Manny Machado", "Nolan Arenado", "Giancarlo Stanton", "Bo Bichette", "Josh Bell"]
+Tom=["Vladimir Guerrero Jr.", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyler O'Neill"]
+Randy=["Rafael Devers", "Xander Bogaerts", "Rhys Hoskins", "Alex Bregman", "Matt Chapman"]
+Chris=["Bryce Harper", "Freddie Freeman", "Paul Goldschmidt", "George Springer", "Mookie Betts"]
+Brett=["Salvador Perez", "Adam Duvall", "Joey Votto", "Mitch Haniger", "Austin Meadows"]
+Zee=["Juan Soto", "Mike Trout", "Shohie Ohtani", "Trea Turner", "Robert Luis"]
+Efran=["Teoscar Hernandez", "Nick Castellanos", "Aaron Judge", "Jorge Polanco", "Jesus Aguilar"]
+Wie=["Jose Abreu", "Yordan Alvarez", "Ozzie Albies", "Marcell Ozuna", "Javier Baez"]
+Rob=["Pete Alonso", "Jose Ramirez", "Franmil Reyes", "Jared Walsh", "Eloy Jimenez"]
+Kevin=["Matt Olson", "J.D. Martinez", "Joey Gallo", "Carlos Correa", "Max Muncy"]
+
 
 def create_output(NAME,LIST):
-
     try:
         player_data = {}
         player_count = 1
         rbi_total = 0
 
-        url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=100000&game_type='R'&season='2021'&sort_column='rbi'"
+        url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=100000&game_type='R'&season='2022'&sort_column='rbi'"
 
         r = requests.get(url, headers={"Content-Type": "application/json"})
         data = eval(r.text)
         
         players=data["leader_hitting_repeater"]["leader_hitting_mux"]["queryResults"]["row"]
-        
+
         for name in LIST:
+            player_found = "None"
             for player in players:
                 name_display_first_last=player["name_display_first_last"]
-                #print(name_display_first_last)
                 if name == name_display_first_last:
                     player_found = "Found"
                     team_name=player["team_name"]
@@ -58,11 +53,23 @@ def create_output(NAME,LIST):
                                                    "player_id": player_id
                                                }
                     player_count = player_count + 1
-        rbi_total = player_data[1]["rbi"] + player_data[2]["rbi"] + player_data[3]["rbi"]
-        print(rbi_total)
+                    break
+            
+            if player_found == "None":
+                team_name="NA"
+                team_abbrev="NA"
+                rbi=0
+                player_id=0
+                player_data[player_count] = {
+                                               "player": name,
+                                               "team_abbrev": team_abbrev,
+                                               "rbi": int(rbi),
+                                               "player_id": player_id
+                                           }
+                player_count = player_count + 1
 
-        #out.writerow( [ NAME, player_data[1]["player"], player_data[1]["team_abbrev"], str(player_data[1]["rbi"]), player_data[2]["player"], player_data[2]["team_abbrev"], str(player_data[2]["rbi"]), player_data[3]["player"],  player_data[3]["team_abbrev"], str(player_data[3]["rbi"]), str(rbi_total), player_data[4]["player"], player_data[4]["team_abbrev"], str(player_data[4]["rbi"]), player_data[5]["player"], player_data[5]["team_abbrev"], str(player_data[5]["rbi"]) ] )
-        
+        rbi_total = player_data[1]["rbi"] + player_data[2]["rbi"] + player_data[3]["rbi"]
+
         out.writerow( [ NAME, 
                         player_data[1]["player"] + "(" + str(player_data[1]["team_abbrev"]) + ")",
                         str(player_data[1]["rbi"]),
@@ -106,19 +113,16 @@ if __name__ == '__main__':
         create_output("Gregg",Gregg)
         create_output("Randy",Randy)
         create_output("Tom",Tom)
-
+        create_output("Chris",Chris)
+        create_output("Brett",Brett)
+        create_output("Wie",Wie)
+        create_output("Zee",Zee)
+        create_output("Efran",Efran)
+        create_output("Rob",Rob)
+        create_output("Kevin",Kevin)
+       
         file.close()
 
-        #create_output("Brett",Brett)
-        #create_output("Wie",Wie)
-        #create_output("Melissa",Melissa)
-        #create_output("Rob",Rob)
-        #create_output("Kevin",Kevin)
-        #create_output("Angelo",Angelo)
-        #create_output("Zee",Zee)
-        #create_output("Arnie",Arnie)
-        #create_output("Efran",Efran)
-        
         sort_report()
 
     except Exception as err:
