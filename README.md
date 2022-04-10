@@ -1,4 +1,1 @@
-# baseball
-Baseball Pool
-
-Prereq pybaseball
+#Baseball Pool
