@@ -14,7 +14,7 @@ bb_year=2022
 url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=1000000&game_type='R'&season='" + str(bb_year) + "'&sort_column='rbi'"
 
 Gregg=["Manny Machado", "Nolan Arenado", "Giancarlo Stanton", "Bo Bichette", "Josh Bell"]
-Tom=["Vladimir Guerrero Jr.", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyler O'Neill"]
+Tom=["Vladimir Guerrero", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyler O'Neill"]
 Randy=["Rafael Devers", "Xander Bogaerts", "Rhys Hoskins", "Alex Bregman", "Matt Chapman"]
 Chris=["Bryce Harper", "Freddie Freeman", "Paul Goldschmidt", "George Springer", "Mookie Betts"]
 Brett=["Salvador Perez", "Adam Duvall", "Joey Votto", "Mitch Haniger", "Austin Meadows"]
