@@ -20,10 +20,17 @@ Chris=["Bryce Harper", "Freddie Freeman", "Paul Goldschmidt", "George Springer",
 Brett=["Salvador Perez", "Adam Duvall", "Joey Votto", "Mitch Haniger", "Austin Meadows"]
 Zee=["Juan Soto", "Mike Trout", "Shohei Ohtani", "Trea Turner", "Luis Robert"]
 Efran=["Teoscar Hernandez", "Nick Castellanos", "Aaron Judge", "Jorge Polanco", "Jesus Aguilar"]
-Wie=["Jose Abreu", "Yordan Alvarez", "Ozzie Albies", "Marcell Ozuna", "Javier Baez"]
+Wie=["Jose Abreu", "Yordan Alvarez", "Marcell Ozuna", "Ozzie Albies", "Javier Baez"]
 Rob=["Pete Alonso", "Jose Ramirez", "Franmil Reyes", "Jared Walsh", "Eloy Jimenez"]
-Kevin=["Matt Olson", "J.D. Martinez", "Joey Gallo", "Carlos Correa", "Max Muncy"]
+Kevin=["Matt Olson", "J.D. Martinez", "Carlos Correa", "Joey Gallo", "Max Muncy"]
+Replacement = ["Ozzie Albies", "Joey Gallo"]
 
+#wee Marcell Ozuna in for Ozzie Albies
+#kevin Carlos Correa in for Joey Gallo
+
+
+def strike(text):
+    return ''.join([u'\u0336{}'.format(c) for c in text])
 
 def create_output(NAME,LIST):
     try:
@@ -69,7 +76,18 @@ def create_output(NAME,LIST):
                 player_count = player_count + 1
 
         rbi_total = player_data[1]["rbi"] + player_data[2]["rbi"] + player_data[3]["rbi"]
+       
+        if player_data[4]["player"] in Replacement:
+            player_data[4]["player"] = strike(player_data[4]["player"])
+            player_data[4]["team_abbrev"] = strike(player_data[4]["team_abbrev"])
+            player_data[4]["rbi"] = strike(str(player_data[4]["rbi"]))
 
+        if player_data[5]["player"] in Replacement:
+            player_data[5]["player"] = strike(player_data[5]["player"])
+            player_data[5]["team_abbrev"] = strike(player_data[5]["team_abbrev"])
+            player_data[5]["rbi"] = strike(str(player_data[5]["rbi"]))
+
+        
         out.writerow( [ NAME, 
                         player_data[1]["player"] + "(" + str(player_data[1]["team_abbrev"]) + ")",
                         str(player_data[1]["rbi"]),
