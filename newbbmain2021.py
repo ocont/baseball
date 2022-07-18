@@ -16,14 +16,14 @@ url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam
 Gregg=["Manny Machado", "Nolan Arenado", "Giancarlo Stanton", "Bo Bichette", "Josh Bell"]
 Tom=["Vladimir Guerrero", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyler O'Neill"]
 Randy=["Rafael Devers", "Xander Bogaerts", "Rhys Hoskins", "Alex Bregman", "Matt Chapman"]
-Chris=["Bryce Harper", "Freddie Freeman", "Paul Goldschmidt", "George Springer", "Mookie Betts"]
+Chris=["Mookie Betts", "Freddie Freeman", "Paul Goldschmidt", "George Springer", "Bryce Harper"]
 Brett=["Salvador Perez", "Adam Duvall", "Joey Votto", "Mitch Haniger", "Austin Meadows"]
 Zee=["Juan Soto", "Mike Trout", "Shohei Ohtani", "Trea Turner", "Luis Robert"]
 Efran=["Teoscar Hernandez", "Nick Castellanos", "Aaron Judge", "Jorge Polanco", "Jesus Aguilar"]
 Wie=["Jose Abreu", "Yordan Alvarez", "Marcell Ozuna", "Ozzie Albies", "Javier Baez"]
 Rob=["Pete Alonso", "Jose Ramirez", "Franmil Reyes", "Jared Walsh", "Eloy Jimenez"]
 Kevin=["Matt Olson", "J.D. Martinez", "Carlos Correa", "Joey Gallo", "Max Muncy"]
-Replacement = ["Ozzie Albies", "Joey Gallo"]
+Replacement = ["Ozzie Albies", "Joey Gallo", "Bryce Harper"]
 
 #wee Marcell Ozuna in for Ozzie Albies
 #kevin Carlos Correa in for Joey Gallo
