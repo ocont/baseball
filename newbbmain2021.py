@@ -18,12 +18,12 @@ Tom=["Vladimir Guerrero", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyle
 Randy=["Rafael Devers", "Xander Bogaerts", "Rhys Hoskins", "Alex Bregman", "Matt Chapman"]
 Chris=["Mookie Betts", "Freddie Freeman", "Paul Goldschmidt", "George Springer", "Bryce Harper"]
 Brett=["Salvador Perez", "Adam Duvall", "Joey Votto", "Mitch Haniger", "Austin Meadows"]
-Zee=["Juan Soto", "Mike Trout", "Shohei Ohtani", "Trea Turner", "Luis Robert"]
-Efran=["Teoscar Hernandez", "Nick Castellanos", "Aaron Judge", "Jorge Polanco", "Jesus Aguilar"]
+Zee=["Trea Turner", "Luis Robert", "Shohei Ohtani", "Juan Soto", "Mike Trout"]
+Efran=["Jorge Polanco", "Nick Castellanos", "Aaron Judge", "Teoscar Hernandez", "Jesus Aguilar"]
 Wie=["Jose Abreu", "Yordan Alvarez", "Marcell Ozuna", "Ozzie Albies", "Javier Baez"]
 Rob=["Pete Alonso", "Jose Ramirez", "Franmil Reyes", "Jared Walsh", "Eloy Jimenez"]
 Kevin=["Matt Olson", "J.D. Martinez", "Carlos Correa", "Joey Gallo", "Max Muncy"]
-Replacement = ["Ozzie Albies", "Joey Gallo", "Bryce Harper"]
+Replacement = ["Ozzie Albies", "Joey Gallo", "Bryce Harper", "Juan Soto", "Mike Trout", "Teoscar Hernandez"]
 
 #wee Marcell Ozuna in for Ozzie Albies
 #kevin Carlos Correa in for Joey Gallo
