@@ -13,7 +13,7 @@ today = datetime.date.today()
 bb_year=2022
 url = "http://lookup-service-prod.mlb.com/json/named.leader_hitting_repeater.bam?sport_code='mlb'&results=1000000&game_type='R'&season='" + str(bb_year) + "'&sort_column='rbi'"
 
-Gregg=["Manny Machado", "Nolan Arenado", "Giancarlo Stanton", "Bo Bichette", "Josh Bell"]
+Gregg=["Manny Machado", "Nolan Arenado", "Josh Bell", "Bo Bichette", "Giancarlo Stanton"]
 Tom=["Vladimir Guerrero", "Austin Riley", "Kyle Tucker", "Eugenio Suarez", "Tyler O'Neill"]
 Randy=["Rafael Devers", "Xander Bogaerts", "Rhys Hoskins", "Alex Bregman", "Matt Chapman"]
 Chris=["Mookie Betts", "Freddie Freeman", "Paul Goldschmidt", "George Springer", "Bryce Harper"]
@@ -23,7 +23,7 @@ Efran=["Jorge Polanco", "Nick Castellanos", "Aaron Judge", "Teoscar Hernandez", 
 Wie=["Jose Abreu", "Yordan Alvarez", "Marcell Ozuna", "Ozzie Albies", "Javier Baez"]
 Rob=["Pete Alonso", "Jose Ramirez", "Franmil Reyes", "Jared Walsh", "Eloy Jimenez"]
 Kevin=["Matt Olson", "J.D. Martinez", "Carlos Correa", "Joey Gallo", "Max Muncy"]
-Replacement = ["Ozzie Albies", "Joey Gallo", "Bryce Harper", "Juan Soto", "Mike Trout", "Teoscar Hernandez"]
+Replacement = ["Ozzie Albies", "Joey Gallo", "Bryce Harper", "Juan Soto", "Mike Trout", "Teoscar Hernandez", "Giancarlo Stanton"]
 
 #wee Marcell Ozuna in for Ozzie Albies
 #kevin Carlos Correa in for Joey Gallo
