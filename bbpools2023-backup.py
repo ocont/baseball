@@ -54,8 +54,8 @@ def get_stats(id):
 def get_team_short_name(team):
     try:
         t = statsapi.lookup_team(team)
-        shortName = t[0]['shortName']
-        return shortName
+        fileCode = t[0]['fileCode'].upper()
+        return fileCode
 
     except Exception as err:
         print(err)
@@ -69,8 +69,8 @@ def main(name, player_list):
         for i in player_list:
             id, firstLastName = get_player_id_name(i)
             current_team, rbi = get_stats(id)
-            shortName = get_team_short_name(current_team)
-            temp_list.append(firstLastName + "(" + shortName + ")")
+            fileCode = get_team_short_name(current_team)
+            temp_list.append(firstLastName + "(" + fileCode + ")")
             temp_list.append(rbi)
         rbi_total = temp_list[2] + temp_list[4] + temp_list[6]
         temp_list.append(rbi_total)
