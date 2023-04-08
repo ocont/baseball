@@ -98,14 +98,19 @@ def write_report():
 
 
 if __name__ == '__main__':
-    main("Tom", Tom)
-    main("Gregg", Gregg)
-    main("Efran", Efran)
-    main("Zee", Zee)
-    main("Wie", Wie)
-    main("Angelo", Angelo)
-    main("Brett", Brett)
+    try:
+        main("Tom", Tom)
+        main("Gregg", Gregg)
+        main("Efran", Efran)
+        main("Zee", Zee)
+        main("Wie", Wie)
+        main("Angelo", Angelo)
+        main("Brett", Brett)
 
-    write_report()
+        write_report()
 
-    sys.exit()
+        sys.exit()
+
+    except Exception as err:
+        print(err)
+        sys.exit(1)
