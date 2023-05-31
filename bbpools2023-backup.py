@@ -17,7 +17,6 @@ today = datetime.date.today()
 Gregg = ["Aaron Judge","Rafael Devers", "Freddie Freeman", "Teoscar Hernandez", "Jose Abreu"]
 Efran =  ["Vladimir Guerrero Jr.", "Francisco Lindor", "Juan Soto", "Xander Bogaerts", "Gleyber Torres"]
 Zee = ["Pete Alonso", "Austin Riley", "Mike Trout", "Eloy Jimenez", "Randy Arozarena"]
-Zee = ["Pete Alonso", "Austin Riley", "Mike Trout", "Randy Arozarena", "Randy Arozarena"]
 Tom = ["Jose Ramirez", "Kyle Tucker", "Shohei Ohtani", "Adolis Garcia", "Mookie Betts"]
 Wie	= ["Matt Olson", "Manny Machado", "C.J. Cron", "Giancarlo Stanton", "Adam Duvall"]
 Angelo = ["Nolan Arenado", "Kyle Schwarber", "Dansby Swanson", "Charlie Blackmon", "Trayce Thompson"]
@@ -57,6 +56,9 @@ def get_team_short_name(team):
         t = statsapi.lookup_team(team)
         fileCode = t[0]['fileCode'].upper()
         return fileCode
+
+    except IndexError:
+        return "Minors"
 
     except Exception as err:
         print(err)
