@@ -12,6 +12,7 @@ import datetime
 import csv
 import pandas as pd
 
+season_year = 2023
 today = datetime.date.today()
 
 Gregg = ["Aaron Judge","Rafael Devers", "Freddie Freeman", "Teoscar Hernandez", "Jose Abreu"]
@@ -26,9 +27,7 @@ table = []
 
 def get_player_id_name(name):
     try:
-        #print(name)
-        player = statsapi.lookup_player(name)
-        #print(player)
+        player = statsapi.lookup_player(name, gameType=None, season=season_year, sportId=1)
         id = player[0]['id']
         firstLastName = player[0]['firstLastName']
         return id, firstLastName
