@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./bbpools2023-backup.py 
+./bbpools2023-main.py
 git add reports/*
 git commit -am "adding modules"
 git push origin
