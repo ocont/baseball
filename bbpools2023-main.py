@@ -63,7 +63,6 @@ def get_team_short_name(team, name):
     try:
         t = statsapi.lookup_team(team)
         fileCode = t[0]['fileCode'].upper()
-        print(fileCode)
         if name in Replacement:
             return strike(fileCode)
         else:
