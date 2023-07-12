@@ -20,10 +20,10 @@ Efrain =  ["Vladimir Guerrero Jr.", "Francisco Lindor", "Juan Soto", "Xander Bog
 Zee = ["Pete Alonso", "Austin Riley", "Mike Trout", "Eloy Jimenez", "Randy Arozarena"]
 #Tom = ["Jose Ramirez", "Kyle Tucker", "Shohei Ohtani", "Adolis Garcia", "Mookie Betts"]
 Tom = ["Adolis Garcia", "Kyle Tucker", "Shohei Ohtani", "Jose Ramirez", "Mookie Betts"]
-Wie	= ["Matt Olson", "Manny Machado", "C.J. Cron", "Giancarlo Stanton", "Adam Duvall"]
+Wie	= ["Matt Olson", "Manny Machado", "Giancarlo Stanton", "C.J. Cron", "Adam Duvall"]
 Angelo = ["Nolan Arenado", "Kyle Schwarber", "Dansby Swanson", "Charlie Blackmon", "Trayce Thompson"]
 Brett = ["Bo Bichette", "Yordan Alvarez", "Alex Bregman", "Paul Goldschmidt", "Trea Turner"]
-Replacement = ["Aaron Judge", "Jose Ramirez", "Paul Goldschmidt"]
+Replacement = ["Aaron Judge", "Jose Ramirez", "Paul Goldschmidt", "C.J. Cron"]
 table = []
 
 def strike(text):
