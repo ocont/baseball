@@ -22,8 +22,8 @@ Zee = ["Pete Alonso", "Austin Riley", "Mike Trout", "Eloy Jimenez", "Randy Aroza
 Tom = ["Adolis Garcia", "Kyle Tucker", "Shohei Ohtani", "Jose Ramirez", "Mookie Betts"]
 Wie	= ["Matt Olson", "Manny Machado", "C.J. Cron", "Giancarlo Stanton", "Adam Duvall"]
 Angelo = ["Nolan Arenado", "Kyle Schwarber", "Dansby Swanson", "Charlie Blackmon", "Trayce Thompson"]
-Brett = ["Paul Goldschmidt", "Yordan Alvarez",	"Alex Bregman", "Bo Bichette", "Trea Turner"]
-Replacement = ["Aaron Judge", "Jose Ramirez"]
+Brett = ["Bo Bichette", "Yordan Alvarez", "Alex Bregman", "Paul Goldschmidt", "Trea Turner"]
+Replacement = ["Aaron Judge", "Jose Ramirez", "Paul Goldschmidt"]
 table = []
 
 def strike(text):
